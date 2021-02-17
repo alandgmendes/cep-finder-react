@@ -33,9 +33,10 @@ class CepEntrada extends React.Component {
           .then(function(data) {
             endereco = data;
             saudacao = "Fala dev de " + endereco.localidade + "!";
-            this.setState({exib: saudacao});
+            alert(saudacao);
           });
-        }       
+        }
+
       render() {
         return (
           <div>
