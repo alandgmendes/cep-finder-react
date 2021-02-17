@@ -39,13 +39,14 @@ class CepEntrada extends React.Component {
 
       render() {
         return (
-          <div>
+          <div style={{color: "red", fontSize: 40, marginTop: 10}}>
+            <h1 style={{color: "black"}}>Entre com seu CEP e clique em exibir cidade. O programa alertará sua cidade!</h1>
           <form onSubmit={this.handleSubmit}>
             <label>
               CEP:
-              <input type="text" value={this.state.value} onChange={this.handleChange} />
+              <input style={{fontSize: 40}} type="text" value={this.state.value} onChange={this.handleChange} />
             </label>
-            <input type="submit" value="Exibir endereço" />
+            <input style={{height: 30}} type="submit" value="Exibir endereço" />
           </form>
           <h1>{this.exib}</h1>
           </div>
